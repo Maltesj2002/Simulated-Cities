@@ -6,10 +6,7 @@ Get started by reading [docs/setup.md](docs/setup.md).
 See [docs/overview.md](docs/overview.md) for an overview of the base module content.
 
 ## Template for a project
-Use this section as your project build prompt.
-Think about these four components and the messages they send between each other.
-
-Before you write any code, use the coding agent in planning mode and focus on documentation first. Draft the docs that explain the feature, workflow, and configuration as part of the plan, then implement only after the docs are clear.
+This project aims to simulate roundabouts in cities
 
 ### My Smart City Project: [Project Name]
 
