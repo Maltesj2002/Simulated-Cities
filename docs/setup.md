@@ -50,6 +50,32 @@ Tip: for notebooks that include both mapping + CRS transforms, you can install b
 pip install -e ".[notebooks,geo]"
 ```
 
+## Open in VS Code
+
+The repository ships a `.vscode/` folder with ready-to-use workspace settings.
+
+1. Open the project folder in VS Code:
+
+   ```bash
+   code .
+   ```
+
+2. When prompted, install the **recommended extensions** (Python, Pylance, Jupyter).  
+   You can also open them manually: **Extensions** → filter by `@recommended`.
+
+3. Select the `.venv` interpreter:  
+   Open the Command Palette → **Python: Select Interpreter** → choose `./.venv/bin/python`  
+   (VS Code may detect it automatically from `settings.json`).
+
+4. Run and debug using the pre-configured launch targets in the **Run and Debug** panel:
+
+   | Launch target | What it does |
+   |---|---|
+   | **Run tests** | Runs `pytest -v` |
+   | **simulated_city (CLI smoke)** | Runs `python -m simulated_city` |
+   | **Demo: config + MQTT** | Runs `scripts/demo/01_config_and_mqtt.py` |
+   | **Demo: beer drinker** | Runs `scripts/demo/03_beer_drinker.py` |
+
 ## Run notebooks
 
 - VS Code: open a notebook in `notebooks/` and select the `.venv` kernel.
