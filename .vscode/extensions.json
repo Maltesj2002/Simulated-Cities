@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    // Python language support + IntelliSense
+    "ms-python.python",
+    "ms-python.pylance",
+    // Jupyter notebooks inside VS Code
+    "ms-toolsai.jupyter"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  // Use the virtual-environment created by `python -m venv .venv`
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+  // Pytest is the project test runner
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["tests"],
+
+  // Make sure VS Code finds the src layout without a manual PYTHONPATH
+  "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+
+  // Jupyter: use the same .venv kernel by default
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+
+  // Keep files tidy
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

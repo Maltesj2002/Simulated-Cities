@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-v"],
+      "justMyCode": true
+    },
+    {
+      "name": "simulated_city (CLI smoke)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "simulated_city",
+      "justMyCode": true
+    },
+    {
+      "name": "Demo: config + MQTT",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/demo/01_config_and_mqtt.py",
+      "justMyCode": true
+    },
+    {
+      "name": "Demo: beer drinker",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/demo/03_beer_drinker.py",
+      "justMyCode": true
+    }
+  ]
+}
