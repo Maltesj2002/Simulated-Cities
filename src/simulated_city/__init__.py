@@ -7,6 +7,7 @@ This package intentionally keeps only workshop-agnostic helpers:
 Simulation logic is meant to be implemented by students during the workshop.
 """
 
+from .agents import BeerDrinker
 from .config import AppConfig, MqttConfig, load_config
 from .geo import (
 	EPSG_25832,
@@ -24,6 +25,7 @@ __all__ = [
 	"AppConfig",
 	"MqttConfig",
 	"load_config",
+	"BeerDrinker",
 	"EPSG_25832",
 	"EPSG_3857",
 	"transform_xy",
